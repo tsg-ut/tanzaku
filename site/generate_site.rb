@@ -94,7 +94,7 @@ end
 
 
 
-template = ERB.new(File.read("site.html.erb"))
+template = ERB.new(File.read("site.html.erb", encoding: "UTF-8"))
 def b negais
     negais = negais
     binding
